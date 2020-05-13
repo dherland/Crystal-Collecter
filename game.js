@@ -9,17 +9,14 @@ $( document ).ready(function(){
   var num4= Math.floor(Math.random()*12+1)
   
   var playerTotal= 0; 
-  var win= 0;
-  var loss = 0;
+  var wins= 0;
+  var losses = 0;
   
 
 $('#wins').text(wins);
 $('#losses').text(losses);
 
-var 
-
-
-function reset(){
+  function reset(){
       Random=Math.floor(Math.random()*102+19);
       console.log(Random)
       $('#scoreToMatch').text(Random);
@@ -46,9 +43,9 @@ function reset(){
  
     $("#ruby").on ('click', function(){
       console.log("working")
-      playerTotal = playerTotal + num1;
+      playerTotal = playerTotal + num3;
       console.log("New playerTotal= " + playerTotal);
-      $('#personalscore').text(playerTotal); 
+      $('#personalScore').text(playerTotal); 
           if (playerTotal == Random){
             woohoo();
           }
@@ -58,9 +55,9 @@ function reset(){
     }) 
     $("#emerald").on ('click', function(){
       console.log("working")
-      playerTotal = playerTotal + num1;
+      playerTotal = playerTotal + num2;
       console.log("New playerTotal= " + playerTotal);
-      $('#totalScore').text(playerTotal); 
+      $('#personalScore').text(playerTotal); 
             //Win & lose conditions
           if (playerTotal == Random){
             woohoo();
@@ -73,7 +70,7 @@ function reset(){
       console.log("working")
       playerTotal = playerTotal + num1;
       console.log("New playerTotal= " + playerTotal);
-      $('#totalScore').text(playerTotal); 
+      $('#personalScore').text(playerTotal); 
             //Win & lose conditions
           if (playerTotal == Random){
             woohoo();
