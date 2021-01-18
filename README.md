@@ -1,2 +1,2 @@
-# TriviaGame
+# Crystal Collector video game
  
